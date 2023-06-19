@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Canela;
+  src: url('assets/fonts/canela/Canela-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Aestetico;
+  src: url('assets/fonts/aestetico/AesteticoFormal-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Akz;
+  src: url('assets/fonts/akz/Akzidenz Grotesk Next Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+.font-primary {
+  font-family: Aestetico, sans-serif;
+}
+.font-secondary {
+  font-family: Akz, serif;
+}
+html {
+  font-family: Akz, sans-serif;
+}
+.bg-tint-a-red {
+  background-color: #ffe6e5;
+}
+.bg-tint-pink {
+  background-color: #fff6f6;
+}
+.tint-red {
+  color: #f3343b;
+}
+.my-slider-progress {
+  background: #ccc;
+}
+
+.my-slider-progress-bar {
+  background: greenyellow;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+/*
+Alpha red: #ffe6e5
+red: #f3343B
+*/

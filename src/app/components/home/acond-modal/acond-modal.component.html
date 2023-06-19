@@ -1,0 +1,45 @@
+
+<dialog #acondModal class="absolute left-0 h-full w-full z-[9999] overflow-x-hidden overflow-y-hidden">
+  <div class="flex justify-center h-screen items-center bg-[#ffe6e5] antialiased cursor-pointer" (click)="acondModal.close()">
+    <div class="flex flex-col mx-auto rounded-lg shadow-xl">
+      <div
+        class="flex flex-row justify-between p-6 bg-white border-b border-gray-200 rounded-tl-lg rounded-tr-lg"
+      >
+        <p class="font-semibold text-gray-800">Feel You - Acondicionador</p>
+        <svg
+          class="w-6 h-6 cursor-pointer"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          (click)="acondModal.close()"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </div>
+      <!--Modal body-->
+      <div class="relative p-4 bg-[#ffe6e5] flex justify-center">
+        <img src="assets/fichas/fichaAcond.png" alt="" height="900" width="1000">
+      </div>
+    </div>
+  </div>
+
+</dialog>
+<div class="text-center">
+  <button type="button"
+          id="shampooBtn"
+          class="px-5 py-2.5 relative rounded group overflow-hidden font-bold bg-[#ffe6e5] text-gray-400 inline-block"
+          (click)="acondModal.show()"
+  >
+      <span
+        class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#ffe6e5] group-hover:h-full opacity-90"></span>
+    <span class="relative group-hover:text-white">Ver más...</span>
+  </button>
+</div>
+<!--
+-->
