@@ -13,6 +13,10 @@ import { ShampooModalComponent } from './components/home/shampoo-modal/shampoo-m
 import {FlowbiteModule} from "flowbite-angular";
 import { AcondModalComponent } from './components/home/acond-modal/acond-modal.component';
 import { CremaModalComponent } from './components/home/crema-modal/crema-modal.component';
+import { FacebookSocialComponent } from './components/footer/facebook-social/facebook-social.component';
+import { InstagramSocialComponent } from './components/footer/instagram-social/instagram-social.component';
+import { WhatsappSocialComponent } from './components/footer/whatsapp-social/whatsapp-social.component';
+import { TiktokSocialComponent } from './components/footer/tiktok-social/tiktok-social.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -29,7 +33,11 @@ const routes: Routes = [
     CarouselComponent,
     ShampooModalComponent,
     AcondModalComponent,
-    CremaModalComponent
+    CremaModalComponent,
+    FacebookSocialComponent,
+    InstagramSocialComponent,
+    WhatsappSocialComponent,
+    TiktokSocialComponent
   ],
   imports: [
     BrowserModule,
